@@ -1,0 +1,640 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box; 
+}
+
+html{
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+}
+
+/* HEADER */
+
+.site-header {
+    background-color:#fff;
+    width:100%;
+    display:block;
+}
+
+.container {
+    max-width: 1180px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.site-header .container { /* Elementų pastūmimas*/
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-nav li {
+    list-style:none;
+}
+
+.main-nav a {
+    color:#000;
+    text-transform:uppercase;
+    text-decoration: none;
+    font-size:0.875rem;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0.04em;
+    padding:16px 12px;
+    margin:0px 10px;
+    display:inline-block;
+    cursor:pointer;  
+}
+
+.main-nav a:hover, .main-nav a:active {
+    border-bottom: 5px solid #e8bf5d;
+}
+
+.logo {
+    padding: 49px 0 44px;
+}
+
+/* HEADER PABAIGA*/
+
+/* HERO PRADŽIA*/
+
+.hero {
+    background-image: linear-gradient(to bottom, rgba(157,157,157,0), rgba(11,11,11,1)), url('../images/fonas.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* jei neuužsikrautų nuotrauka fonas bus juodas*/
+}
+
+.hero .container{
+    padding-top: 602px;
+    padding-bottom: 147px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-text {
+    color: #fff;
+    border-left: 2px solid #e8bf5d;
+    padding: 0 0 0 18px;
+}
+
+.hero-text h1{
+    font-family:'Playfair Display', serif;
+    font-size: 4.75rem; /* 76/16=4.75 rem */
+    font-weight: 300;
+    letter-spacing: 0.04em;
+    margin:inherit;
+}
+
+.hero-text p{
+    font-family:'Open Sans', sans-serif;
+    font-size: 1.8rem;  /* 14/16=0.875*/
+    font-weight: 100;
+    letter-spacing: 0.02em;
+    margin:inherit;
+}
+
+.hero-nav a {
+    color:#000;
+    background-color: #e8bf5d;
+    text-decoration: none;
+    font-size: 1rem; /*16 px*/
+    letter-spacing: 0.04em;
+    padding:19px 49px;
+    border-radius: 30px;
+    border:none;
+    cursor: pointer;
+}
+
+/* HERO PABAIGA*/
+
+/* SECTION ABOUT PRADŽIA*/
+
+.about{
+    background-color: #fff;
+    font-family: 'Playfair Display', serif;
+    align-items: center;
+    
+}
+
+section > .container {
+    padding: 100px 0;
+}
+
+/*.number{
+    position:absolute;
+    left: 1px;
+    color:#262626; /* juodame fone, baltame f3f3f3 */
+  /*  font-family: 'Open Sans', sans-serif;
+    font-size: 14.8rem;
+    letter-spacing: 0.04em;
+}*/
+
+
+.about-intro, .practice-intro, .attorney-intro, .client-intro, .publications-intro, .faq-intro, .contact-intro {
+    position:relative;
+    width: 798px; /* gal nereikia?*/
+    padding-left: 18px;
+    border-left: 2px solid #e8bf5d;
+    margin: 0 0 70px;
+}
+
+.about-intro h3, .practice-intro h3, .attorney-intro h3, .client-intro h3, .publications-intro h3, .faq-intro h3, .contact-intro h3{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14.8rem;
+    letter-spacing: 0.04em;
+    font-weight: 300;
+    position:absolute;
+    color:#f3f3f3;
+    top:-310px;
+    left:-2px;
+}
+
+.about-intro h2, .practice-intro h2, .attorney-intro h2, .client-intro h2, .publications-intro h2, .faq-intro h2, .contact-intro h2 {
+    position:relative;
+    z-index: 1;
+    font-size: 1.9375rem; /* 31/16=1.9375 rem */
+    font-weight:600;
+    letter-spacing: 0.04em;/* 40/1000=0.04em */
+    margin:0;
+    padding-bottom: 30px;
+}
+
+.about-intro p, .practice-intro p, .attorney-intro p, .client-intro p, .publications-intro p, .faq-intro p, .contact-intro p {
+    position:relative;
+    z-index: 1;
+    color: #666666;
+    font-size: 1.3125rem; /* 21/16=1.3125rem */
+    font-weight:300;
+    line-height:1.476;  /* 31/21=1.476*/
+    letter-spacing: 0.04em;/* 40/1000=0.04em */
+    margin:0;
+}
+
+.about-history {
+    box-sizing: border-box;
+    justify-content: space-around;
+}
+
+.event {
+    display:inline-flex;
+}
+
+.about-history h3{
+    font-family: 'Playfair Display', serif;
+    font-size:1.3125rem; /*21/16=1.3125*/
+    font-weight: 600;
+    line-height:1.476; /*31/21=1.476*/
+    letter-spacing: 0.04em;
+    margin: 0;
+}
+
+.event p {
+    font-family: 'Open Sans', sans-serif;
+    font-size:1.3125rem; /*21/16=1.3125*/
+    line-height:1.476; /*31/21=1.476*/
+    font-weight: 600;
+    max-height: 68px;
+    padding: 0 47px 0 0;
+}
+
+.event span {
+    font-family: 'Open Sans', sans-serif;
+    font-size:1rem; /*16px*/
+    line-height:1.3125; /*21/16=1.3125*/
+    font-weight: 500;
+    padding: 17px;
+}
+
+.about-expertise {
+    max-width:50%; /* užimamas plotas */
+}
+
+.about-expertise h3, .attorney-member h3 {
+    color:#000;
+    font-family: 'Playfair Display', serif;
+    font-size:1.3125rem; /*21/16=1.3125*/
+    font-weight: 600;
+    line-height:1.476; /*31/21=1.476*/
+    letter-spacing: 0.04em;
+    margin: 0;
+}
+
+.about-expertise p {
+    padding-top: 36px;
+    color:#666666;
+    font-family: 'Open Sans', sans-serif;
+    font-size:0.875rem; /*14/16=0.875*/
+    font-weight: 500;
+    line-height:2.214; /*31/14=2.214*/
+    letter-spacing: 0.04em;
+    margin: 0;
+}
+/* SECTION ABOUT PABAIGA*/
+
+/* SECTION PRACTICE PRADŽIA*/
+/*practise-intro antraštė tokia pati kaip visų kitų todėl pridėjau about-intro, about-intro h3 ir about-intro p*/
+
+/*practice div'u tekstas formatas toks pats kaip about-expertice h3 ir p tik h3kita spalva*/
+
+.practice-intro h3, .client-intro h3, .faq-intro h3 {
+    color:#262626;
+}
+.practice, .faq {
+    background-color: #111111;
+    color: #fff;
+}
+
+.practice-content{
+   margin-left: 111px;
+}
+
+.practice-top {
+    margin-bottom: 50px;
+}
+
+.practice-service, .practice-labour, .practice-cyber, .practice-real{
+    margin-right: 116px;
+}
+
+.practice-content i{
+    color: #e8bf5d;
+    font-size: 2rem; 
+    width: 2.625rem; 
+}
+
+.practice-content h3, .client-content h3 {
+    color:#fff;
+    font-family: 'Playfair Display', serif;
+    font-size:1.3125rem; /*21/16=1.3125*/
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    margin: 0 0 28px;
+}
+
+.practice-content p{
+    max-width: 459px;
+    color:#666666;
+    font-family: 'Open Sans', sans-serif;
+    font-size:0.875rem; /*14/16=0.875*/
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    line-height:1.476; /*31/21=1.476*/
+    margin: 0;
+}
+
+
+/* SECTION PRACTICE PABAIGA*/
+
+/* SECTION ATTORNEY PRADŽIA*/
+/*attorney-intro antraštė tokia pati kaip visų kitų todėl pridėjau about-intro, about-intro h3 ir about-intro p*/
+
+/*practice div'u tekstas formatas toks pats kaip about-expertice h3 ir p tik h3kita spalva*/
+
+.member{
+    text-align: left;
+    justify-content: space-around;
+    margin:0;
+}
+
+.attorney-member h3{
+    padding-top: 52px;
+    margin:0;
+    color:#111111;
+}
+
+.attorney-member span {
+    color:#666666;
+    font-family:'Open Sans', sans-serif;
+    font-size:0.875rem; /*14/16=0.875*/
+    line-height:1.3125; /*21/16=1.3125*/
+    font-weight: 500;
+}
+
+.attorney-member img {
+    max-width: 100%;
+}
+
+/* SECTION ATTORNEY PABAIGA*/
+/* SECTION CLIENT PRADŽIA */
+
+/*client-intro antraštė tokia pati kaip visų kitų todėl pridėjau about-intro, about-intro h3 ir about-intro p*/
+
+.client {
+    background-image: url('../images/c2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.client h2{
+    color: #fff;
+}
+
+.client-content p, .client-content h5 {
+    color:#fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size:0.875rem; /*14/16=0.875*/
+    font-weight: 500;
+    line-height:2.214; /*31/14=2.214*/
+    letter-spacing: 0.04em;
+    margin: 0;
+}
+.client-content img{
+    box-shadow: 22px 22px #e8bf5d;
+    margin-right:57px;
+}
+
+.client-content p{
+    max-width: 600px;
+    padding:34px 0 42px;
+    text-align: justify;
+}
+
+.client-content h3, .client-content h5 {
+    margin:0;
+    text-align: left;
+}
+
+.client-comment span{
+    padding-right: 13px;
+    color: #535251;
+    font-size: 7.5rem;
+    align-self: flex-start;
+}
+
+.slideshow-container {
+  position: relative;
+  height: 305px;
+}
+
+.mySlides {
+  display: none;
+  text-align: center;
+  height: 300px;
+}
+
+.dot-container {
+  object-position:bottom;
+  text-align:left;
+padding-top: 36px;
+}
+
+/* navigacijos taskai */
+.dot {
+  height: 12px;
+  width: 12px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  margin: 1px;;
+  cursor: pointer;
+}
+.active, .dot:hover {
+  background-color: #fff;
+  height: 14px;
+  width: 14px;
+}
+
+/* SECTION CLIENT PABAIGA */
+/* SECTION PUBLICATIONS PRADŽIA */
+
+.content1 {
+    max-width: 371px;
+    justify-content: space-between;
+    margin-right: 28px;
+    border-bottom: 3px solid #e8bf5d;
+}
+
+.content1 h3{
+    color: #000;
+    padding-top: 30px;
+    margin:0;
+    font-weight: 500;
+}
+
+.author p, .author h4 {
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+    font-size:0.875rem; /*14/16=0.875*/
+    font-weight: 400;
+    padding: 0;
+    margin:0;
+}
+
+.author p {
+    padding-right: 10px;
+}
+
+.data-bio p {
+    color:#666666;
+    font-style: italic;
+    margin:0;
+}
+
+.data-about p {
+    color: #666666;
+    padding: 38px 0;
+    margin:0;
+    font-family: 'Open Sans', sans-serif;
+    font-size:0.875rem; /*14/16=0.875*/
+    font-weight: 500;
+    line-height:2.214; /*31/14=2.214*/
+    letter-spacing: 0.04em; 
+}
+
+.content-nav {
+    justify-content: space-between;
+    padding-bottom: 28px;
+}
+
+.content-nav a{
+    text-decoration: none;
+    color: #000;
+    font-family:'Open Sans', sans-serif;
+    font-size:0.875rem; /*14/16=0.875*/ 
+}
+
+.data-bio {
+    justify-content: space-between;
+    text-align: center;
+    margin:0;
+    padding: 0;
+}
+/* SECTION PUBLICATIONS PABAIGA */
+/* SECTION FAQ PRADŽIA */
+
+.tablinks {
+  background-color: #111111;
+  color: white;
+  padding: 18px 20px;
+  border: none;
+  border-bottom: 2px solid #e8bf5d;
+  text-align: left;
+  outline: none;
+  font-size: 16px;
+  max-width: 50%;
+  font-family:'Open Sans', sans-serif;
+  margin-right: 34px;
+  cursor: pointer;
+}
+
+.tablinks:active, .tablinks:hover {
+  background-color:#111111;
+  color: #e8bf5d;
+}
+
+.tablinks:after {
+  content: '\002B'; /* Pliusas*/
+  color: white;
+  font-weight: bold;
+  float: right;
+}
+
+.tablinks.active:after {  
+  content: "\2212"; /* Minusas*/
+}
+
+.tabcontent {
+  max-width: 470px;
+  background-color: #e8bf5d;
+  color: #000;
+  font-family:'Open Sans', sans-serif;
+  font-weight: 500;
+  align-items: center;
+  padding: 0px 48px; /* Dar pasižiūrėti*/
+  border-radius: 5px;
+  line-height:2.214;
+  transition: max-height 0.2s ease-out;
+  position:right;
+}
+.tabcontent:after{
+    display: contents;
+}
+
+/*additional css*/
+
+.tablinks {
+    width: 50%;
+    display: block;
+}
+
+.tabcontent {
+    width: 50%;
+    position:absolute;
+    right: 0;
+    top: 0;
+}
+
+.container {
+    position: relative;
+}
+
+
+
+/* SECTION FAQ PABAIGA */
+/* SECTION CONTACT PRADŽIA */
+/* faq fonas sutampa su practis area fonu pridėta ten*/
+
+.contact{
+    background-color: #fdfcfc;
+}
+.contact-form{
+    width: 870px;
+    background-color: #fff;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    box-shadow: 0px 0px 21px 6px rgba(248,248,246,1);
+    margin-left: 150px;
+    
+}
+.contact-content{
+    max-width: 870px;
+}
+
+.contact .contact-content .contact-form .form {
+    flex-direction: column;
+}
+
+.form{
+    color: #c7c7c7;
+}
+
+.forma {
+    color: #c7c7c7;
+    width: 350px;
+    border:none;
+    border-bottom: 1px solid #c7c7c7;
+    padding: 36px 0px 8px;
+    font-family:'Open Sans', sans-serif;
+    font-style: italic;
+    resize: none;
+}
+
+.btn-form{
+    background-color: #e8bf5d;
+    border: none;
+    border-radius: 50px;
+    padding: 17px 32px 19px 32px;
+    margin: 32px 0px;
+    width: 170px;
+    padding: 17px 32px;
+    font-weight: 600;
+}
+
+.btn-form a {
+    color: #000; 
+    text-decoration: none;
+}
+
+.map img{
+    box-shadow:-22px 22px #e8bf5d;
+    margin: 0 0 0 68px;
+}
+
+/*.contact-intro span{
+    color:red;
+    font-size: 12.1625rem; /* 194,6/16px = 12.1625 */
+  /* position: absolute;
+    z-index: 0;
+    margin: 0 auto;
+    padding-bottom: 
+}/*
+
+/* SECTION CONTACT PABAIGA */
+/* FOOTER PRADŽIA*/
+
+.site-footer{
+    background-color: #000;
+    color: #fff;
+    display: block;
+}
+
+.site-footer .container{
+    justify-content: space-between;
+    align-items: center;
+    padding:32px 0;
+    margin:0 auto;
+}
+.links li{
+    list-style: none;
+    display:inline-block;
+    padding: 0 10px;
+    font-size: 1rem; /* paskaičiuoti !!!*/  
+}
+
+.links a {
+    cursor: pointer;
+}
+
+/* FOOTER PABAIGA*/
